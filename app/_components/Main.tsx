@@ -1,3 +1,4 @@
+import { Header } from "./Header";
 import { Experiences } from "./Experiences";
 import { Projets } from "./Projets";
 import { Formation } from "./Formation";
@@ -8,23 +9,32 @@ import { Footer } from "./Footer";
 export const Main = () => {
     
     return (
+        <>
+        <div className=" grid justify-center ml-24 max-lg:w-[72%] max-lg:ml-36 max-md:ml-0 max-xs:w-[250px] max-xs:px-[200px]" >
 
-        <><div >
+        <div className=" flex justify-start max-md:mr-16">
+            <Header />
+        </div>
+        <div className=" max-md:mr-16">
             <Projets />
         </div>
-        <div className="grid grid-cols-2 items-start mt-4 gap-4 w-auto max-md:grid-cols-1">
+        <div className="flex col-auto gap-4 mt-4 max-md:grid max-md:justify-center max-md:mr-16">
             <Formation />
             <Experiences />
         </div>
-        <div className=" flex justify-center ">
+        <div className=" flex justify-start ">
           <Skills />
       
         </div >
-        <div className=" flex justify-center ">
+        <div className=" flex justify-start max-md:mr-16">
 
            <Contact /> 
         </div>
+        <div className=" flex justify-center max-md:mr-16">
+
            <Footer />
+        </div>
+        </div>
         
         </>
     );

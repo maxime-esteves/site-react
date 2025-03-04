@@ -11,16 +11,16 @@ export const Skills = () => {
 
   return (
     <>
-    <div className="">
+    <div className="mr-36  max-md:mr-0">
 
     
     <div className="">
       <div className="mt-36 mb-8 gap-8 ">
-        <h1 className="text-5xl font-bold text-white dark:text-black ">Skills</h1>
+        <h1 className="text-5xl font-bold text-white dark:text-black">Skills</h1>
       </div>
 
       <div id="skills">
-        <p className="text-base text-white mb-24 w-[700px] max-md:w-[550px] max-xs:w-[250px] dark:text-black">
+        <p className="text-base text-white mb-24 w-[700px] dark:text-black max-md:w-[370px]">
           💪 Fort d&apos;une <strong className="text-red-500">expérience de six ans</strong> dans la logistique d’un commerce de gros avec une expérience en vente/bureau d&apos;étude en électricité, j&apos;ai pu acquérir 
           des compétences uniques qui sauront vous montrer ma persévérance dans mon travail.
           <br />
@@ -29,14 +29,14 @@ export const Skills = () => {
       </div>
       </div>
       {/* Barre de séparation */}
-      <div className="relative max-w-2xl mb-48">
+      <div className="relative max-w-2xl mb-48 max-md:ml-4 ">
         <div className="pointer-events-none">
           <div className="absolute right-1/2 translate-x-1/2 -top-10 h-px w-full bg-gray-400 opacity-20"></div>
           <div className="absolute -top-10 right-1/2 h-[2px] w-48 rounded-full bg-gradient-to-r from-red-500"></div>
         </div>
       </div>
 
-<div className="flex items-start max-md:items-center max-md:gap-4 max-md:flex-col-reverse">
+<div className="flex items-start max-md:w-[370px] max-md:flex-col-reverse">
       <div className="grid grid-cols gap-6">
         <div>
           <div className="w-auto border p-8 rounded-lg h-auto">
@@ -63,7 +63,7 @@ export const Skills = () => {
         </div>
         </div>
         {/* Logos des technologies */}
-        <div className="flex flex-wrap w-[360px] gap-4 ml-4 items-center ">
+        <div className="flex flex-wrap w-[360px] gap-4 ml-4 items-center max-md:mb-4">
           {[
             { href: "https://developer.mozilla.org/fr/docs/Web/HTML", src: "/html-5.svg", alt: "HTML" },
             { href: "https://developer.mozilla.org/fr/docs/Web/CSS", src: "/css-3.svg", alt: "CSS" },

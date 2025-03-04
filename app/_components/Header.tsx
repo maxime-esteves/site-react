@@ -118,7 +118,7 @@ export const Header = () => {
 </div>
       </nav>
 
-      <div className=" mb-8 flex flex-row items-center gap-8 ">
+      <div className=" mb-8 flex flex-row items-center gap-8 max-xs:w-[200px]">
         <h1 className="text-5xl font-bold text-white dark:text-black max-xs:w-[250px]">
           Développeur front-end
         </h1>

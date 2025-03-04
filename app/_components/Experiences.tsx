@@ -50,10 +50,10 @@ export default function ExpandableDiv(): JSX.Element {
     },
   ];
   return (
-    <div className="flex flex-col items-start ">
+    <div className="flex flex-col items-start max-md:flex-row max-md:w-auto max-md:justify-center">
       {/* Div avec transition */}
       <div
-        className={`w-auto border-[1px] p-4 rounded-lg overflow-hidden transition-all duration-500 ${
+        className={`w-auto border-[1px] p-4 rounded-lg overflow-hidden transition-all duration-500 max-md:ml-6 max-md:mr-6 ${
           isExpanded ? "h-auto" : "h-auto"
         }`}
       >
@@ -80,7 +80,7 @@ export default function ExpandableDiv(): JSX.Element {
                 <h3 className="text-white text-base font-medium tracking-tight dark:text-black">
                   {experiencesVisible.title}
                 </h3>
-                <p className="text-gray-500 text-sm w-[280px]">{experiencesVisible.description}</p>
+                <p className="text-gray-500 text-sm w-[280px] max-md:w-[200px]">{experiencesVisible.description}</p>
               </div>
               <div>
                 <p className="text-gray-300 text-xs dark:text-black">{experiencesVisible.date}</p>
@@ -113,7 +113,7 @@ export default function ExpandableDiv(): JSX.Element {
                 <h3 className="text-white text-base font-medium tracking-tight dark:text-black">
                   {experiences.title}
                 </h3>
-                <p className="text-gray-500 text-sm w-[280px]">{experiences.description}</p>
+                <p className="text-gray-500 text-sm w-[280px] max-md:w-[200px]">{experiences.description}</p>
               </div>
               <div>
                 <p className="text-gray-300 text-xs dark:text-black">{experiences.date}</p>

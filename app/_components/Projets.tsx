@@ -19,9 +19,10 @@ export default function ExpandableDiv(): JSX.Element {
       },
       {
         id: 2,
-        title: "Site web sur un jeu vidéo",
-        description: "Gestion de l'élevage sur Dofus. PHP/MySQL/JS",
-        link: "https://le-bon-eleveur.42web.io/",
+        title: "Mini-jeux (la grille, tours de Hanoï)",
+        description:
+          "Exercice pour développer ma pratique des algorithmes JS.",
+        link: "https://maximeesteves.github.io/jeux.html",
         image: "angle-cercle-droite.svg",
       },
       {
@@ -49,10 +50,9 @@ export default function ExpandableDiv(): JSX.Element {
       },
       {
         id: 6,
-        title: "Mini-jeux (la grille, tours de Hanoï)",
-        description:
-          "Exercice pour développer ma pratique des algorithmes JS.",
-        link: "https://maximeesteves.github.io/jeux.html",
+        title: "Application de gestion d'élevage",
+        description: "Gestion d'un élevage de Volkorne sur Dofus. PHP/MySQL/JS",
+        link: "https://le-bon-eleveur.42web.io/",
         image: "angle-cercle-droite.svg",
       },
     ];
@@ -66,9 +66,9 @@ export default function ExpandableDiv(): JSX.Element {
     ];
   
     return (
-      <div className="flex justify-start items-center max-xs:px-8">
+      <div className="flex justify-center items-center gap-4">
         {/* ---------------- PROJETS ------------------ */}
-        <div className={`rounded-lg px-10 py-8 w-auto border-[1px] flex flex-col  ${
+        <div className={`rounded-lg px-8 py-8 w-auto border-[1px] flex flex-col max-md:ml-6 max-md:mr-6 ${
         isExpanded ? "h-auto" : "h-auto"
         }`}>
           {/* ✅ H1 en dehors de la grid mais toujours dans le cadre */}
@@ -77,7 +77,7 @@ export default function ExpandableDiv(): JSX.Element {
           </h1>
     
           {/* Conteneur des projets en GRID */}
-          <div className="grid grid-cols-2 gap-8 max-xs:grid-cols-1">
+          <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1">
             {projectsInvisible.map((projectsInvisible) => (
               <div 
               key={projectsInvisible.id} 
